@@ -75,10 +75,54 @@
 
 ### UIView常见属性
 
-    ```objc
-
-    
+    ```objc 
+        - (void)loadView{
+          [super loadView];
+        //  NSLog(@"%s", __func__);
+        }
         
+        /*
+           1.当控制器的view加载完毕的时候调用
+           2.系统自动调用
+           3.控件的初始化操作,数据的初始化
+         */
+        - (void)viewDidLoad {
+            [super viewDidLoad];
+        
+            // 1.1 查看红色的View的父控件
+        //    NSLog(@"红色的View:%@------控制器的View:%@", self.redView.superview, self.view);
+            
+            // 1.2 查看红色的View的子控件
+        //    NSLog(@"红色的view的子控件:%@", self.redView.subviews);
+            
+            // 1.3 查看控制器的View的子控件
+        //      NSLog(@"控制器的View的子控件:%@", self.view.subviews);
+            
+            // 1.4 控制器的view的父控件
+              NSLog(@"%@", self.view.superview);
+            
+        }
+        
+        /*
+           控制器的View已经完全显示
+           系统调用
+         */
+        - (void)viewDidAppear:(BOOL)animated{
+            [super viewDidAppear:animated];
+            
+            // 1.4 控制器的view的父控件 ---> UIWindow
+            NSLog(@"%@", self.view.superview);
+        }
+        
+        
+        /*
+          1. 当控制器接收到内存警告时候调用
+          2. 系统自动调用
+          3. 处理调用一些不必要的内存和一些耗时的内存
+         */
+        - (void)didReceiveMemoryWarning {
+            [super didReceiveMemoryWarning];
+        }
 
     ```
 
