@@ -38,15 +38,23 @@
 
 ### 连线常见错误
 
-#### 错误一
-
-* 原因：有多余的连线
-* 解决：删掉多余的连线
-
-#### 错误二
-
-* 原因：找不到连线的方法
-* 解决：添加缺少的方法
+####注意事项:
+   1.凡是继承UIControl的类产生的对象,都能够实现点击
+   2.如果不是继承UIControl的类产生的对象,都能不够实现点击
+ 
+   经典的错误:
+   一.错误一:
+     描述: 
+     reason: '[<MainViewController 0x7fd133746de0> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key testLabel.'
+     原因: 有多余的连线
+     解决: 删除多余的联系
+ 
+  二.错误二
+     描述:
+     reason: '-[MainViewController clickRedBtn:]: unrecognized selector sent to instance 0x7f7f9254bee0'
+     原因:在控制器中找不到对应的方法
+     解决: (一) 增加对应的方法  
+           (二)删除多余的连线
 
 ---
 # UIView
