@@ -1,5 +1,20 @@
 # UILable
 ### UILabe 属性
+    ```objc
+    // 改变文本中文字的颜色
+        self.label.textColor = [UIColor redColor];
+    // 改变文本的内容
+        self.label.text = @"我是一段红擦擦的文字";
+    // 改变背景的颜色
+        self.label.backgroundColor = [UIColor blackColor];
+    // 文字居中
+        self.label.textAlignment = NSTextAlignmentCenter;
+    // 改变文字的大小
+        self.label.font = [UIFont systemFontOfSize:20.0];
+     // 改变红色按钮的背景颜色
+        self.redBtn.backgroundColor = [UIColor redColor];
+
+    ```
 
 ### UI控件响应事件移除拖线连接
 
@@ -58,7 +73,11 @@
 ---
 # UIView
 
-### 
+### UIView常见属性
+```
+    
+```
+
 
 
 
