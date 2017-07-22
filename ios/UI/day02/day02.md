@@ -66,3 +66,55 @@
 
 
 ```
+
+# UIImage
+## Mode 13种模式 解释
+
+
+```objc
+      // 1. 创建一个UIImageView对象
+    UIImageView *imageView = [[UIImageView alloc] init];
+    
+    // 1.1 设置位置和尺寸
+    imageView.frame = CGRectMake(100, 100, 180, 180);
+    
+    // 1.2 设置背景颜色
+    //    imageView.backgroundColor = [UIColor purpleColor];
+    
+    // 1.3 设置图片
+    imageView.image = [UIImage imageNamed:@"1"];
+    
+    /*
+     
+     UIViewContentModeRedraw, // 重新绘制 drawRect
+     
+     
+     // 凡是带有Scale,图片可能会被拉伸或者压缩
+     UIViewContentModeScaleToFill, // 压缩或者拉伸图片填充整个UIImageView
+     
+     // Aspect:适应, 会保持原有图片的宽高比
+     UIViewContentModeScaleAspectFit, //压缩或者拉伸图片,保持宽高比,自适应填充
+     UIViewContentModeScaleAspectFill, //压缩或者拉伸图片,保持宽高比,填充整个UIImageView
+     
+     // 凡是不带有Scale,图片不可能会被拉伸或者压缩
+     UIViewContentModeCenter,
+     UIViewContentModeTop,
+     UIViewContentModeBottom,
+     UIViewContentModeLeft,
+     UIViewContentModeRight,
+     UIViewContentModeTopLeft,
+     UIViewContentModeTopRight,
+     UIViewContentModeBottomLeft,
+     UIViewContentModeBottomRight,
+     */
+    
+    // 1.4 设置图片的内容模式
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    
+    // 2.把UIImageView加到控制器的view
+    [self.view addSubview:imageView];
+    
+    // 处理超出的部分图片
+    imageView.clipsToBounds =  YES;
+```
