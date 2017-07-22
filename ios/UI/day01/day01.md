@@ -53,7 +53,7 @@
      描述:
      reason: '-[MainViewController clickRedBtn:]: unrecognized selector sent to instance 0x7f7f9254bee0'
      原因:在控制器中找不到对应的方法
-     解决: (一) 增加对应的方法  
+     解决:  (一) 增加对应的方法  
            (二)删除多余的连线
 
 ---
