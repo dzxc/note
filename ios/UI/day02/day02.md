@@ -190,3 +190,29 @@
     imageView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.5);
     [self.view addSubview:imageView];
 ```
+# 资源存放问题
+## Assets.xcassets:
+   1.在资源包中是Assets.car
+   2.放在Assets.xcassets文件中的图片无法获取路径
+   3.只能通过imageNamed方式来加载
+   4.不能通过imageWithContentsOfFile方式来加载
+   
+### 放在项目目录中的图片
+   1.会被打包到MainBundle中
+   2.能够获取图片的路径
+   3.能通过imageNamed方式来加载
+   4.也能通过imageWithContentsOfFile方式来加载   
+   
+## 图片设置方式
+  *imageNamed
+  *imageWithContentsOfFile
+### 方式一
+```objc
+    UIImage *image = [UIImage imageNamed:@"3.jpg"];   
+        
+```
+### 方式二
+```objc
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
+    //    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+```
