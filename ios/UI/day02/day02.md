@@ -68,7 +68,7 @@
 ```
 
 # UIImage
-## Mode 13种模式 解释
+## contentMode 13种模式 解释
 
 
 ```objc
@@ -117,4 +117,78 @@
     
     // 处理超出的部分图片
     imageView.clipsToBounds =  YES;
+```
+##### 设置毛玻璃效果
+```objc
+    // 实现毛玻璃效果
+    
+    // 1.创建UIImageView对象
+    UIImageView *imageView =[[UIImageView alloc] init];
+    
+    // 2.设置frame
+    //    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    imageView.frame = self.view.bounds;
+    
+    // 3.设置图片
+    imageView.image = [UIImage imageNamed:@"1"];
+    
+    // 4.设置图片的模式
+    imageView.contentMode = UIViewContentModeScaleToFill;
+    
+    // 5.设置毛玻璃
+     // 5.1 创建UIToolBar对象
+    UIToolbar *toolBar = [[UIToolbar alloc] init];
+    toolBar.frame = imageView.bounds;
+    [imageView addSubview:toolBar];
+    
+    // 5.2 设置toolBar的模式
+    toolBar.barStyle = UIBarStyleBlack;
+    
+
+    // 6.把imageView加到控制器的View中
+    [self.view addSubview:imageView];
+```
+# ImageView 的frame设置
+### 第一种方式
+```objc
+      // 1.最常规的设置方式
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = CGRectMake(100, 100, 267, 400);
+    imageView.image = [UIImage imageNamed:@"1"];
+    [self.view addSubview:imageView];
+```
+### 第二种方式
+```objc
+    // 2.根据图片的大小进行设置
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    // 2.1 先拿到图片对象
+    UIImage *image = [UIImage imageNamed:@"1"];
+    // 2.2 设置imageView的frame
+    imageView.frame = CGRectMake(100, 100, image.size.width, image.size.height);
+    // 2.3 添加图片
+    imageView.image = image;
+
+
+
+```
+
+### 第三种方式
+```objc
+    // 3.初始化的时候直接设置
+    UIImage *image = [UIImage imageNamed:@"1"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, image.size.width, image.size.height)];
+    imageView.image = image;
+
+```
+
+### 第四种方式
+```objc
+      // 4.初始化时默认设置 initWithImage:控件的尺寸===图片的尺寸
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1"]];
+    
+    // 改变UIImageView的位置
+    imageView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.5);
+    
+    [self.view addSubview:imageView];
 ```
