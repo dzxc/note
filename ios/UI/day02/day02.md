@@ -184,11 +184,9 @@
 
 ### 第四种方式
 ```objc
-      // 4.初始化时默认设置 initWithImage:控件的尺寸===图片的尺寸
+    // 4.初始化时默认设置 initWithImage:控件的尺寸===图片的尺寸
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1"]];
-    
     // 改变UIImageView的位置
     imageView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.5);
-    
     [self.view addSubview:imageView];
 ```
