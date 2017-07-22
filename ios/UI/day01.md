@@ -1,8 +1,10 @@
 #UILable
 
 ###移除拖线连接
-    ![第一步](images/Snip20170722_9.png)
-    ![第二步](images/Snip20170722_11.png)
+####第一步
+![第一步](images/Snip20170722_9.png)
+####第二步
+![第二步](images/Snip20170722_11.png)
     
     
 
@@ -12,5 +14,5 @@
     
 
 #### 第二种
-    ![第二步](images/Snip20170722_12.png)
+![第二步](images/Snip20170722_12.png)
 
