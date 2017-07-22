@@ -207,12 +207,15 @@
   *imageNamed
   *imageWithContentsOfFile
 ### 方式一
+##### 方式一可以加载在Assets.car里的内容以及项目包里面的内容
 ```objc
     UIImage *image = [UIImage imageNamed:@"3.jpg"];   
         
 ```
-### 方式二
+### 方式二 
+##### 方式二只可以项目包里面的内容
+
 ```objc
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
-    //    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 ```
