@@ -24,7 +24,7 @@
 ![第三种](images/Snip20170722_12.png)
 
 #### 第四种
-![第三种](images/Snip20170722_14.png)
+![第四种](images/Snip20170722_14.png)
 
 #### 第五种
-![第三种](images/Snip20170722_15.png)
+![第五种](images/Snip20170722_15.png)
