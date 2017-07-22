@@ -76,6 +76,26 @@
 ### UIView常见属性
 
     ```objc 
+        @property(nonatomic,readonly) UIView *superview;
+         获得自己的父控件对象
+        
+        @property(nonatomic,readonly,copy) NSArray *subviews;
+         获得自己的所有子控件对象
+        
+        @property(nonatomic) NSInteger tag;
+         控件的ID(标识)，父控件可以通过tag来找到对应的子控件
+        
+        @property(nonatomic) CGAffineTransform transform;
+         控件的形变属性(可以设置旋转角度、比例缩放、平移等属性)
+        - (void)addSubview:(UIView *)view;
+         添加一个子控件view
+        
+        - (void)removeFromSuperview;
+         将自己从父控件中移除
+        
+        - (UIView *)viewWithTag:(NSInteger)tag;
+         根据一个tag标识找出对应的控件（一般都是子控件）
+        
         - (void)loadView{
           [super loadView];
         //  NSLog(@"%s", __func__);
