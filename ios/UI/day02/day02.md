@@ -204,8 +204,8 @@
    4.也能通过imageWithContentsOfFile方式来加载   
    
 ## 图片设置方式
-  *imageNamed
-  *imageWithContentsOfFile
+    *imageNamed
+    *imageWithContentsOfFile
 ### 方式一
 ##### 方式一可以加载在Assets.car里的内容以及项目包里面的内容
 ```objc
