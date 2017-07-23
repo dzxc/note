@@ -219,3 +219,33 @@
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 ```
+
+## 注意：图片的两种加载方式:
+   imageNamed
+   imageWithContentsOfFile
+ 
+   Assets.xcassets:
+   1.在资源包中是Assets.car
+   2.放在Assets.xcassets文件中的图片无法获取路径
+   3.只能通过imageNamed方式来加载
+   4.不能通过imageWithContentsOfFile方式来加载
+ 
+   放在项目目录中的图片
+   1.会被打包到MainBundle中
+   2.能够获取图片的路径
+   3.能通过imageNamed方式来加载
+   4.也能通过imageWithContentsOfFile方式来加载
+ 
+   查看资源包的路径: po NSHomeDirectory()--->bundle-application-->
+   
+图片的两种加载方式:
+1> imageNamed:
+  a. 就算指向它的指针被销毁,该资源也不会被从内存中干掉
+  b. 放到Assets.xcassets的图片,默认就有缓存
+  c. 图片经常被使用
+
+2> imageWithContentsOfFile:
+  a. 指向它的指针被销毁,该资源会被从内存中干掉
+  b. 放到项目中的图片就不由缓存
+  c. 不经常用,大批量的图片
+
