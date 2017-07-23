@@ -92,5 +92,30 @@ plist的文件名不能叫做“info”、“Info”之类的
 添加plist等文件资源的时候，一定要勾选下面的选项
 ![1.png](images/1.png)
 
+---
 
-    
+# 懒加载
+
+---
+
+# 用模型取代字典的好处
+### 使用字典的坏处
+一般情况下，设置数据和取出数据都使用“字符串类型的key”，编写这些key时，编辑器没有智能提示，需要手敲
+dict[@"name"] = @"Jack";
+NSString *name = dict[@"name"];
+手敲字符串key，key容易写错
+Key如果写错了，编译器不会有任何警告和报错，造成设错数据或者取错数据
+### 使用模型的好处
+所谓模型，其实就是数据模型，专门用来存放数据的对象，用它来表示数据会更加专业
+模型设置数据和取出数据都是通过它的属性，属性名如果写错了，编译器会马上报错，因此，保证了数据的正确性
+使用模型访问属性时，编译器会提供一系列的提示，提高编码效率
+app.name = @"Jack";
+NSString *name = app.name;
+### 字典转模型
+字典转模型的过程最好封装在模型内部
+
+模型应该提供一个可以传入字典参数的构造方法
+    - (instancetype)initWithDict:(NSDictionary *)dict;
+    + (instancetype)xxxWithDict:(NSDictionary *)dict;
+
+  
