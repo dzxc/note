@@ -1,3 +1,38 @@
+# IBAction和IBOutlet
+### IBAction
+从返回值角度上看，作用相当于void
+只有返回值声明为IBAction的方法，才能跟storyboard中的控件进行连线
+
+### IBOutlet
+只有声明为IBOutlet的属性，才能跟storyboard中的控件进行连线
+
+---
+# 设置程序启动时加载的storyboard
+这个设置表明：程序启动时会加载Main.storyboard
+![1.png](images/1.png)
+
+---
+
+# UIView
+苹果将控件的共同属性都抽取到父类UIView中
+所有的控件最终都继承自UIView
+UIButton、UILabel都是继承自UIView（可以查看头文件）
+# 父控件、子控件
+每一个控件其实都是一个容器
+可以将其他控件放到该控件的内部
+比较常见的还是将UIView作为容器
+
+可以将A控件放入B控件
+A控件是B控件的子控件
+B控件是A控件的父控件
+
+每一个控制器都有一个UIView
+控制器本身是不可见
+能够看到的是控制器的View
+每一个控制器中都一个UIVIew的属性
+控制器中管理的所有子控件都是该控件的子控件
+
+
 # UILable
 ### UILabe 属性
     ```objc
