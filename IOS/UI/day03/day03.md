@@ -9,8 +9,11 @@
 对应的枚举常量：UIControlStateHighlighted
 
 #### disabled（失效状态，不可用状态）
+
 如果enabled属性为NO，就是处于disable状态，代表按钮不可以被点击
 对应的枚举常量：UIControlStateDisabled
+
+---
 
 ### 用代码创建UIButton
     //在用代码创建按钮的同时指定按钮样式
