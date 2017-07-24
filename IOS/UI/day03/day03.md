@@ -108,6 +108,17 @@ plist的文件名不能叫做“info”、“Info”之类的
     2.在get方法中判断:
       1>如果为空,加载数据
       2>如果不为空,就直接返回数据
+      
+      //  注意，懒加载用property声明数据类型后，获取数据对象的函数重写实现懒加载，
+      - (NSArray *)dataArr{
+          // 切记 此处不能使用 self.dataArr 来获取数据，会进入死循环
+            if (_dataArr == nil) {
+                // 加载数据
+                  // 但是可以用self.dataArr来设置数据， 具体原因请参考objc点语法特性
+                    self.dataArr = @[];
+            }
+            return _dataArr;
+}
 ---
 
 # 用模型取代字典的好处
