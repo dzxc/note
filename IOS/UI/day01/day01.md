@@ -43,7 +43,22 @@
 ---
 
 # 五 关于IBAction和IBOutlet前缀IB的解释
-
+#### IB全称:Interface Builder
+##### 以前UI界面开发模式:Xcode + Interface Builder
+##### 从Xcode4开始,Interface Builder已经整合到Xcode中
+##### 面试要求:熟练Interface Builder
+---
+# 六 类扩展
+## 作用
+##### 能为某个类增加额外的属性,成员变量,方法声明
+###### 一般将类扩展写到.m文件中
+#### 使用格式
+![3.png](images/3.png)
+#### 与分类的区别
+##### 分类的小括号必须有名字
+![4.png](images/4.png)
+##### 分类只能扩充方法
+##### 如果在分类中声明了一个属性,分类只会生成这个属性的get\set方法的声明,不会有实现
 ---
 # 设置程序启动时加载的storyboard
 这个设置表明：程序启动时会加载Main.storyboard
@@ -55,7 +70,7 @@
 苹果将控件的共同属性都抽取到父类UIView中
 所有的控件最终都继承自UIView
 UIButton、UILabel都是继承自UIView（可以查看头文件）
-### UIView的常见属性
+##### UIView的常见属性
 @property(nonatomic,readonly) UIView *superview;
  获得自己的父控件对象
 
@@ -68,7 +83,7 @@ UIButton、UILabel都是继承自UIView（可以查看头文件）
 @property(nonatomic) CGAffineTransform transform;
  控件的形变属性(可以设置旋转角度、比例缩放、平移等属性)
 
-### UIView的常见方法
+##### UIView的常见方法
 - (void)addSubview:(UIView *)view;
  添加一个子控件view
 
@@ -78,7 +93,7 @@ UIButton、UILabel都是继承自UIView（可以查看头文件）
 - (UIView *)viewWithTag:(NSInteger)tag;
  根据一个tag标识找出对应的控件（一般都是子控件）
 
-### UIView的常见属性
+##### UIView的常见属性
 @property(nonatomic) CGRect frame;
  控件矩形框在父控件中的位置和尺寸(以父控件的左上角为坐标原点)
 
