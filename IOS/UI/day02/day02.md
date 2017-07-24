@@ -1,5 +1,6 @@
 #UILable
 ##属性
+
 ```objc
     @property(nonatomic,copy)   NSString           *text; 显示的文字
 
