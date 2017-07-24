@@ -1,3 +1,8 @@
+# 一  storyboard文件的认识
+#### 作用：描述软件界面的
+#### 应用程序的启动原理
+当应用程序启动的时候，首先会加载一个storyboard
+
 # IBAction和IBOutlet
 ### IBAction
 从返回值角度上看，作用相当于void
