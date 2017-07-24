@@ -18,11 +18,6 @@
 ---
 
 # 三 IBAction
-从返回值角度上看，作用相当于void
-只有返回值声明为IBAction的方法，才能跟storyboard中的控件进行连线
-
---- 
-# IBOutlet
 ###### 只能修饰方法返回值类型
 ###### 被IBAction修饰的方法
 
@@ -30,7 +25,24 @@
 
 2. 返回值类型实际是void
 
+
+只有返回值声明为IBAction的方法，才能跟storyboard中的控件进行连线
+
+##### 使用格式 -(IBAction)buttonClick{}
+--- 
+# 四 IBOutlet
+###### 只能修饰属性
+###### 被IBOutlet修饰的属性
+能拖线到storyboard中
+###### 使用格式
+```objc
+@property(nonatomic, weak)IBOutlet UILabel *label
+```
 只有声明为IBOutlet的属性，才能跟storyboard中的控件进行连线
+
+---
+
+# 五 关于IBAction和IBOutlet前缀IB的解释
 
 ---
 # 设置程序启动时加载的storyboard
