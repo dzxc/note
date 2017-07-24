@@ -60,11 +60,6 @@
 ##### 分类只能扩充方法
 ##### 如果在分类中声明了一个属性,分类只会生成这个属性的get\set方法的声明,不会有实现
 ---
-# 设置程序启动时加载的storyboard
-这个设置表明：程序启动时会加载Main.storyboard
-![1.png](images/1.png)
-
----
 # 七 常见的错误
 ##### 错误1
 ![5.png](images/5.png)
@@ -75,8 +70,30 @@
 ![6.png](images/6.png)
 ###### 原因:调用了一个不存在的方法
 解决:认真检查方法名,使用正确且存在的方法名
----
 
+---
+# 设置程序启动时加载的storyboard
+这个设置表明：程序启动时会加载Main.storyboard
+![1.png](images/1.png)
+
+
+---
+# 父控件、子控件
+每一个控件其实都是一个容器
+可以将其他控件放到该控件的内部
+比较常见的还是将UIView作为容器
+
+可以将A控件放入B控件
+A控件是B控件的子控件
+B控件是A控件的父控件
+
+每一个控制器都有一个UIView
+控制器本身是不可见
+能够看到的是控制器的View
+每一个控制器中都一个UIVIew的属性
+控制器中管理的所有子控件都是该控件的子控件
+
+---
 # UIView
 苹果将控件的共同属性都抽取到父类UIView中
 所有的控件最终都继承自UIView
@@ -93,19 +110,8 @@ UIButton、UILabel都是继承自UIView（可以查看头文件）
 
 @property(nonatomic) CGAffineTransform transform;
  控件的形变属性(可以设置旋转角度、比例缩放、平移等属性)
-
-##### UIView的常见方法
-- (void)addSubview:(UIView *)view;
- 添加一个子控件view
-
-- (void)removeFromSuperview;
- 将自己从父控件中移除
-
-- (UIView *)viewWithTag:(NSInteger)tag;
- 根据一个tag标识找出对应的控件（一般都是子控件）
-
-##### UIView的常见属性
-@property(nonatomic) CGRect frame;
+ 
+ @property(nonatomic) CGRect frame;
  控件矩形框在父控件中的位置和尺寸(以父控件的左上角为坐标原点)
 
 @property(nonatomic) CGRect bounds;
@@ -113,105 +119,9 @@ UIButton、UILabel都是继承自UIView（可以查看头文件）
 
 @property(nonatomic) CGPoint center;
  控件中点的位置(以父控件的左上角为坐标原点)
- 
----
-
-# 父控件、子控件
-每一个控件其实都是一个容器
-可以将其他控件放到该控件的内部
-比较常见的还是将UIView作为容器
-
-可以将A控件放入B控件
-A控件是B控件的子控件
-B控件是A控件的父控件
-
-每一个控制器都有一个UIView
-控制器本身是不可见
-能够看到的是控制器的View
-每一个控制器中都一个UIVIew的属性
-控制器中管理的所有子控件都是该控件的子控件
-# UIKit坐标系
-在UIKit中，坐标系的原点(0，0)在左上角，x值向右正向延伸，y值向下正向延伸
-![Snip20170724_18.png](images/Snip20170724_18.png)
 
 
-# UILable
-### UILabe 属性
-    ```objc
-    // 改变文本中文字的颜色
-        self.label.textColor = [UIColor redColor];
-    // 改变文本的内容
-        self.label.text = @"我是一段红擦擦的文字";
-    // 改变背景的颜色
-        self.label.backgroundColor = [UIColor blackColor];
-    // 文字居中
-        self.label.textAlignment = NSTextAlignmentCenter;
-    // 改变文字的大小
-        self.label.font = [UIFont systemFontOfSize:20.0];
-     // 改变红色按钮的背景颜色
-        self.redBtn.backgroundColor = [UIColor redColor];
-
-    ```
-
-### UI控件响应事件移除拖线连接
-
-#### 第一步
-
-![第一步](images/Snip20170722_9.png)
-
-#### 第二步
-
-![第二步](images/Snip20170722_11.png)
-
-### UI控件响应事件拖线连接的三种方式
-
-#### 第一种
-
-![第一种](images/Snip20170722_13.png)
-
-#### 第二种
-
-![第二种](images/Snip20170722_12.png)
-
-#### 第三种
-
-![第三种](images/Snip20170722_14.png)
-
-### 可连线的UI控件直接拖到ControlView 的空白处，弹出创建方法对话框
-
-![](images/Snip20170722_16.png)
-
-### 注意
-
-* 只有sendevent事件的对象才能连线方法
-* 继承自UIControl对象的才能连线
-* 一个控件可以对应多个事件 
-* 一个控件也可以对应多个个属性，但尽量不要这么做
-
-### 连线常见错误
-
-####注意事项:
-   1.凡是继承UIControl的类产生的对象,都能够实现点击
-   2.如果不是继承UIControl的类产生的对象,都能不够实现点击
- 
-   经典的错误:
-   一.错误一:
-     描述: 
-     reason: '[<MainViewController 0x7fd133746de0> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key testLabel.'
-     原因: 有多余的连线
-     解决: 删除多余的联系
- 
-  二.错误二
-     描述:
-     reason: '-[MainViewController clickRedBtn:]: unrecognized selector sent to instance 0x7f7f9254bee0'
-     原因:在控制器中找不到对应的方法
-     解决:  (一) 增加对应的方法  (二)删除多余的连线
-
----
-# UIView
-
-### UIView常见属性
-
+##### UIView的常见方法
     ```objc 
         @property(nonatomic,readonly) UIView *superview;
          获得自己的父控件对象
@@ -283,6 +193,86 @@ B控件是A控件的父控件
 
     ```
 
+---
+# UILable
+### UILabe 属性
+    ```objc
+    // 改变文本中文字的颜色
+        self.label.textColor = [UIColor redColor];
+    // 改变文本的内容
+        self.label.text = @"我是一段红擦擦的文字";
+    // 改变背景的颜色
+        self.label.backgroundColor = [UIColor blackColor];
+    // 文字居中
+        self.label.textAlignment = NSTextAlignmentCenter;
+    // 改变文字的大小
+        self.label.font = [UIFont systemFontOfSize:20.0];
+     // 改变红色按钮的背景颜色
+        self.redBtn.backgroundColor = [UIColor redColor];
+
+    ```
+
+---
+
+# UIKit坐标系
+在UIKit中，坐标系的原点(0，0)在左上角，x值向右正向延伸，y值向下正向延伸
+![Snip20170724_18.png](images/Snip20170724_18.png)
 
 
 
+
+### UI控件响应事件移除拖线连接
+
+#### 第一步
+
+![第一步](images/Snip20170722_9.png)
+
+#### 第二步
+
+![第二步](images/Snip20170722_11.png)
+
+### UI控件响应事件拖线连接的三种方式
+
+#### 第一种
+
+![第一种](images/Snip20170722_13.png)
+
+#### 第二种
+
+![第二种](images/Snip20170722_12.png)
+
+#### 第三种
+
+![第三种](images/Snip20170722_14.png)
+
+### 可连线的UI控件直接拖到ControlView 的空白处，弹出创建方法对话框
+
+![](images/Snip20170722_16.png)
+
+### 注意
+
+* 只有sendevent事件的对象才能连线方法
+* 继承自UIControl对象的才能连线
+* 一个控件可以对应多个事件 
+* 一个控件也可以对应多个个属性，但尽量不要这么做
+
+### 连线常见错误
+
+####注意事项:
+   1.凡是继承UIControl的类产生的对象,都能够实现点击
+   2.如果不是继承UIControl的类产生的对象,都能不够实现点击
+ 
+   经典的错误:
+   一.错误一:
+     描述: 
+     reason: '[<MainViewController 0x7fd133746de0> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key testLabel.'
+     原因: 有多余的连线
+     解决: 删除多余的联系
+ 
+  二.错误二
+     描述:
+     reason: '-[MainViewController clickRedBtn:]: unrecognized selector sent to instance 0x7f7f9254bee0'
+     原因:在控制器中找不到对应的方法
+     解决:  (一) 增加对应的方法  (二)删除多余的连线
+
+---
