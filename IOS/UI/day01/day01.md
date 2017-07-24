@@ -1,14 +1,35 @@
 # 一  storyboard文件的认识
-#### 作用：描述软件界面的
-#### 应用程序的启动原理
-当应用程序启动的时候，首先会加载一个storyboard
+###### 作用：描述软件界面的
+###### 应用程序的启动原理
+1. 当应用程序启动的时候，首先会加载一个storyboard
+2. 加载storyboard里面的控制器：箭头所指向的控制器
+3. 控制器会创建（加载）一个属于控制器的view
 
-# IBAction和IBOutlet
-### IBAction
+###### 配置程序一启动就会加载Main.storyboard文件
+![2.png](images/2.png)
+
+---
+
+# 二 UIViewController
+
+###### 概念:凡是继承自UIViewController的对象,都叫做控制器
+###### 注意:每一个控制器都会专门管理一个软件界面
+###### 作用:负责处理软件界面的各种事件,并负责软件界面的创建和销毁
+---
+
+# 三 IBAction
 从返回值角度上看，作用相当于void
 只有返回值声明为IBAction的方法，才能跟storyboard中的控件进行连线
 
-### IBOutlet
+--- 
+# IBOutlet
+###### 只能修饰方法返回值类型
+###### 被IBAction修饰的方法
+
+1. 能拖线到storyboard中
+
+2. 返回值类型实际是void
+
 只有声明为IBOutlet的属性，才能跟storyboard中的控件进行连线
 
 ---
