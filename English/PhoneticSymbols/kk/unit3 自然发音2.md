@@ -94,8 +94,27 @@
 ---
 | 发音 | 字母 | 范例|
 | :---: | :---: | :---: |
-|    [ɝ]|     ur| burn [bɝn], fur [fɝ]|
+|[ɝ]四声 |     ur| burn [bɝn], fur [fɝ]|
 |       |     er| clerk [klɝk], verb [vɝb]|
 |       |     ir| bird [bɝd], girl [gɝl]|
+### er：在重音节[ɝ] ，在轻音节[ɚ]
 
+---
+| 发音 | 字母 | 范例|
+| :---: | :---: | :---: |
+|   [ai]|    i~e| bike [baik], kite [kait]|
+|       |     y | cry [krai] , dry [drai]|
+|       |     i | child [ tʃaid ], kind [ kaid]|
+|       |     ie| die [dai], pie [pai]|
+|       |    igh| night [nait], right [rait]|
+---
+| 发音 | 字母 | 范例|
+| :---: | :---: | :---: |
+|   [au]|    ou | cloud [klaud], house [haus]|
+|       |    ow | cow[kau], down[daun]|
+---
+| 发音 | 字母 | 范例|
+| :---: | :---: | :---: |
+|   [ɔi]|     oi| coin [kɔin] pint [ pɔint]| 
+|       |     oy| boy [bɔi], enjoy [Indʒɔi]|
 
