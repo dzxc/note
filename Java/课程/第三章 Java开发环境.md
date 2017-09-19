@@ -1,8 +1,8 @@
-### java 运行时环境 jre
+### java 运行时环境 JRE
 JRE（Java runtime environment）
 
 ### Java 开发工具包 JDK
-Java development kit
+Java Development kit
 
 JRE = JVM + 核心类库
 JDK = JRE + 开发工具
