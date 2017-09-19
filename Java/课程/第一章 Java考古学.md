@@ -6,8 +6,7 @@
 
 ##### Sun公司
 
-Sun公司全称Sun Microsystems （Sun微系统公司）
-斯坦福大学孵化的高科技
+Sun公司全称Sun Microsystems （Sun微系统公司）是斯坦福大学孵化的一家高科技公司
 Stanford University Network(斯坦福大学校园网) 简写为 Sun
 
 2009年4月20日甲骨文以74亿美金收购Sun微系统公司
@@ -21,4 +20,20 @@ Netscape公司全称 Netscape Communications Corporation (网景公司)
 不过， 就像 Gosling 在专访中谈到的:“ 毕竟， **语言只是实现目标的工具， 而不是目标本身**”。Gosling 把这种语言称为“ Oak”\(这么起名的原因大概是因为 他非常喜欢自己办公室外的橡树 \)。 Sun 公司的人后来发现 Oak是一种已有的计算机语言的名字，于是，将其改名为 Java。
 #### Java 文化
 java 的开发公司为Sun公司()
-
+#### Java语言的三种技术架构
+J2EE （Java 2 platform Enterprise Edition） 企业版
+J2SE （Java 2 platform Standard Edition）标准版
+J2ME （Java 2 platform Micro Edition）小型版
+Java 5.0 后更名为 javaee Javase JavaMe
+#### Java语言特点
+1 ) 简单性
+2 ) 面向对象
+3 ) 分布式
+4 ) 健壮性
+5 ) 安全性
+6 ) 体系结构中立 
+7 ）可移植性 
+8 ）解释性型 
+9 ）高性能 
+10 ）多线程 
+11 ）动态性
