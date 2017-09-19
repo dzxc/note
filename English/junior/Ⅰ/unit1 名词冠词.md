@@ -47,9 +47,35 @@ music cold love honesty
 water tea air
 **物质名词为不可数名词。当物质名词表示为具体东西是，则变为可数名词，如：room -- a room， glass 玻璃-- a glass 一个玻璃杯**
 ** 数字+容器(度量衡) + of + 物质名词 表示计量物质如： a loaf of bread， a sheet of paper 一张纸**
-### 普通名词的单复数 句子中需要体现名词的单复数
- 
 
+### 普通名词的单复数 句子中需要体现名词的单复数
+## 名词的数（可数名词范围）： 个数为1：单数 个数为2以上的：复数
+### 不可数名词没有单复数
+### 单复数变化规则
+#### 1）规则变化的复数名词
+**名词字尾加s**
+发音：
+1 在无声子音后面发[ s ]
+如 book-> books[buks]
+2 在有声子音后面发[ z ] 
+如 bed-> beds [bedz]
+3 其他
+如 boy-> boys [bɔiz]
+horse -> horses [hɔ:siz]
+
+#### 2）以 s, x, sh,ch结尾的词，词尾是加-es 读[iz]
+如 bus -> buses[bʌsiz]
+#### 3) 以f, 或 fe结尾的词，先将f 或 fe 变成v ，再加-es[vz]
+如 half - halves[ha:vz]
+#### 4)以o结尾的词，刺猬加-es或-s
+如 hero -> heroes[hiərəuuz]
+zoo -> zoos[zu:z]
+#### 5)以辅音字母加y结尾的词，先将y改为i，再加-es 读[iz]
+如 city -> cities[sitiz]
+
+#### 6) 以元音字母加y结尾的词，直接加-s
+
+#### 7)
 #冠词
 
 
