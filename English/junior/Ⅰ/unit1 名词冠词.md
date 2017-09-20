@@ -48,6 +48,10 @@ water tea air
 **物质名词为不可数名词。当物质名词表示为具体东西是，则变为可数名词，如：room -- a room， glass 玻璃-- a glass 一个玻璃杯**
 ** 数字+容器(度量衡) + of + 物质名词 表示计量物质如： a loaf of bread， a sheet of paper 一张纸**
 
+---
+
+# 名词单复数变化规则
+
 ### 普通名词的单复数 句子中需要体现名词的单复数
 ## 名词的数（可数名词范围）： 个数为1：单数 个数为2以上的：复数
 ### 不可数名词没有单复数
@@ -68,10 +72,9 @@ horse -> horses [hɔ:siz]
 #### 3) 以f, 或 fe结尾的词，先将f 或 fe 变成v ，再加-es[vz]
 如 half - halves[ha:vz]
 **注意：
-1某些单词以f或者fe结尾的不需要改f或fe为v，加-es，直接加-s，如：roof - roofs
-belief - beliefs
-safe-safes
-chief-chiefs
+1某些单词以f或者fe结尾的不需要改f或fe为v，加-es，直接加-s，如：
+roof - roofs  belief - beliefs
+safe-safes  chief-chiefs
 2 一种特殊情况：个别以f或fe 结尾的词会有两种复数形式
 handkerchief- handkerchiefs 或者 handkerchieves（手帕）
 **
@@ -95,17 +98,13 @@ month-months[mʌnθs]
 
 ### 名词复数不规则变化
 #### 1母音发生变化
-man-men
-woman-women
-footfeet
-mouse-mice
+man - men woman - women
+foot - feet mouse - mice
 #### 2词尾发生变化
-child-children
+child - children
 #### 3单复数形式不变
-fish
-deer
-Chinese
-sheep
+fish deer
+Chinese sheep
 **注意：**
 ##### 某些名词只存在复数，如 
 glasses眼镜 
@@ -115,19 +114,42 @@ trousers裤子
 scissors 剪刀 
 compasses 圆规 
 
+**注意：某些名词以s结尾，但不是复数，如：maths， physics**
+
 ---
 
 ### 合成名词变为复数时
 #### 1把第一个或最后一个变为复数
+passerby - passersby 路人
+son-in-law - sons-in-law 女婿
+girl friend - girl friends 女朋友
+grown-up - grown-ups 成年人 
+
 #### 2把构成合成词的两个词都变为复数
+man doctor - men doctors 男医生
+woman teacher - women teachers 女教师
+**注意：这一类合成词多为man woman 构成的**
 
 ---
 
+**注意：
+当fish 作鱼讲时，单复数一样，是可数名词
+当fish 作鱼肉讲时，是不可数名词
+当chicken 作鸡讲时，是可数名词
+当chicken 作鸡肉讲时，是不可数名词**
 
-#冠词
+---
+#不可数名词
+##### --- 它们前面不能用不定冠词，没有复数形式
 
-
-# 名词单复数变化规则
+### 用容器来表示不可数名词的量
+a cup of coffee 一杯咖啡  a jar of jam 一罐果酱
+a piece of news 一条新闻  a piece f wood 一片木头
+a tube of toothpaste  一管牙膏
+a piece/sheet of paper 一张纸片
+**要表示两片面包，六杯茶这样的复数概念时 two pounds of cheese 两磅奶酪**
+### 用 much, a lot of,a little,little, lots of, plenty of, some等表示
+### 可数名词表示复数可以用 many few ,a few some, penty of ,lots of /a lot of
 # 名词所有格
 所有格之后的名词，如在句中非常容易理解时可省略；
 
