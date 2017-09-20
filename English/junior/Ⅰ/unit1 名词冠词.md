@@ -67,6 +67,15 @@ horse -> horses [hɔ:siz]
 如 bus -> buses[bʌsiz]
 #### 3) 以f, 或 fe结尾的词，先将f 或 fe 变成v ，再加-es[vz]
 如 half - halves[ha:vz]
+**注意：
+1某些单词以f或者fe结尾的不需要改f或fe为v，加-es，直接加-s，如：roof - roofs
+belief - beliefs
+safe-safes
+chief-chiefs
+2 一种特殊情况：个别以f或fe 结尾的词会有两种复数形式
+handkerchief- handkerchiefs 或者 handkerchieves（手帕）
+**
+
 #### 4)以o结尾的词，刺猬加-es或-s
 如 hero -> heroes[hiərəuuz]
 zoo -> zoos[zu:z]
@@ -74,8 +83,47 @@ zoo -> zoos[zu:z]
 如 city -> cities[sitiz]
 
 #### 6) 以元音字母加y结尾的词，直接加-s
+day-> days[deiz]
 
-#### 7)
+#### 7) 以th结尾的词，在词尾加-s
+**th[ð]加-s 读[ðz]**
+mouth - mouths[mauðz]
+**th[θ]加-s[θz]**
+month-months[mʌnθs]
+
+---
+
+### 名词复数不规则变化
+#### 1母音发生变化
+man-men
+woman-women
+footfeet
+mouse-mice
+#### 2词尾发生变化
+child-children
+#### 3单复数形式不变
+fish
+deer
+Chinese
+sheep
+**注意：**
+##### 某些名词只存在复数，如 
+glasses眼镜 
+clothes衣服 
+pants 裤子 
+trousers裤子 
+scissors 剪刀 
+compasses 圆规 
+
+---
+
+### 合成名词变为复数时
+#### 1把第一个或最后一个变为复数
+#### 2把构成合成词的两个词都变为复数
+
+---
+
+
 #冠词
 
 

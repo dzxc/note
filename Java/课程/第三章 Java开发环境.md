@@ -12,6 +12,10 @@ Linux版
 Mac版
 
 ### 环境变量配置
+Windows版
+Linux版
+Mac版
+
 
 
 ### 第一个Java程序
