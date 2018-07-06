@@ -1,0 +1,1 @@
+#ECMAScript 简称 ES6
