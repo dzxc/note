@@ -1,6 +1,9 @@
 # JVM 
+#### JVM部分版本简要
+
 |JVM|说明|
 |---|---|
+|Sun Cassic / Exact VM| Classic 第一款商用JAVA虚拟机，外挂JIT编译器，Exact VM 是Solaris 平台的JAVA虚拟机，具备两级即时编译，编译器与解释器混合工作模式等，现代高性能虚拟机的雏形|
 |HotSpot|Longview Technologies开发 被SUN收购，2006年 Java开源 并建立OpenJDK，HotSpot  成为Sun JDK和OpenJDK中所带的虚拟机，2010年Oracle 收购 Sun得到Hotspot|
 |JRockit VM|2008 年 Oracle收购BEA得到JRockit VM，Oracle宣布在JDK8时整合JRockit和Hotspot，优势互补，在Hotspot基础上，移植JRockit优秀特性|
 |KVM|SUN发布，IOS Android前，广泛用于手机系统CDC/CLDC手机、电子书、PDA等设备上建立统一的Java编程接口，J2ME的重要组成部分|
