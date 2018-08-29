@@ -1,3 +1,5 @@
+# 设计模式
+在软件开发中 特定问题的
 1 Singleton 单件
 2 Abstract Factory 抽象工厂模式
 3 Builder 生成器模式
