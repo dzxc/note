@@ -4,7 +4,7 @@
 主要服务于基于Java平台的项目构建，依赖管理和项目信息管理。利用pom.xml文件自动构建项目
 
 
-
+![](/MAVEN/images/1.png)
 ### Maven的核心概念 
 
 1. **坐标**
@@ -101,7 +101,7 @@ artifactId：定义实际项目中的一个模块，项目名
 version：定义当前项目的当前版本
 packaging：定义该项目的打包方式
 
-#### 2. 依赖管理
+### 2. 依赖管理
 
 **依赖范围 scope **
 其中依赖范围scope 用来控制依赖和编译，测试，运行的classpath的关系. 主要的是三种依赖关系如下：
@@ -110,7 +110,7 @@ packaging：定义该项目的打包方式
 3. provided：已提供依赖范围。对于编译，测试的classpath都有效，但对于运行无效。因为由容器已经提供，例如servlet-api
 4. runtime:运行时提供。例如:jdbc驱动
 
-依赖管理
+##### 依赖
 1. 传递性依赖
 依赖本身具有传递性，如果 A.jar 依赖另 B.jar包，则一个项目中依赖A.jar后必然会依赖B.jar
 受作用域影响，不同作用于之间的依赖传递表现不同
@@ -119,12 +119,17 @@ packaging：定义该项目的打包方式
 2. 可选依赖
 可选依赖表示某些情况下被依赖项目可以指定自己所依赖的项目不被上层发现
 是否向下传递
+
+
+
     <optional> 
         true/false
     </optional>  
 
+
 3. 排除依赖
 排除依赖，上层可以指定不包含某些某些
+
 
     <exclusions>
     	<exclusion>
@@ -148,21 +153,21 @@ Maven的核心仅仅定义了抽象的生命周期，具体的任务都是交由
 每个插件都能实现多个功能，每个功能就是一个插件目标
 Maven的生命周期与插件目标相互绑定，以完成某个具体的构建任务
 例如compile就是插件maven-compiler-plugin的一个插件目标
-
-<build>
-	<plugins>
-		<plugin>
-     	 		<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-source-plugin</artifactId>
-      		<version>2.2.1</version>
-      		<executions>
-            			<execution>
-					<goals>
-						<goal>jar-no-fork</goal>
-            				</goals>
-            				<phase>verify</phase>
-				</execution>
-    			</executions>
-  		</plugin>
-	</plugins>
-</build>
+    
+    <build>
+    	<plugins>
+    		<plugin>
+         	 		<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-source-plugin</artifactId>
+          		<version>2.2.1</version>
+          		<executions>
+                			<execution>
+    					<goals>
+    						<goal>jar-no-fork</goal>
+                				</goals>
+                				<phase>verify</phase>
+    				</execution>
+        			</executions>
+      		</plugin>
+    	</plugins>
+    </build>
