@@ -5,20 +5,22 @@
     Python
     微积分
     线性代数
-公式概览
+公式一览
     逻辑回归 
     $$\hat y^{(i)}=\sigma(w^TX^{(i)}+b)$$
 
 
-    激活函数
+    激活函数()
 $$\sigma(z^{(i)})= \frac{1}{1+e^{-z^{(i)}}}$$
 
-    损失函数
+    损失函数(loss function)
 $$L(\hat y^{(i)}, y^{(i)})= -(y^{(i)}log(\hat y^{(i)})) + (1-y^{(i)})log(1-\hat y^{(i)})$$
     
     
-    成本函数
+    成本函数(cost function)
 $$J(w,b) = \frac{1}{m}\sum_{i=1}^{m}L(\hat y^{(i)},y^{(i)})=-\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}log(\hat y^{(i)})+(1-y^{(i)})log(1-\hat y^{(i)})]$$
+
+
     梯度下降函数
         
     
