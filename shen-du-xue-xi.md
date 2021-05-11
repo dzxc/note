@@ -19,7 +19,8 @@ $$L(\hat y^{(i)}, y^{(i)})= -(y^{(i)}log(\hat y^{(i)})) + (1-y^{(i)})log(1-\hat 
     
     成本函数
 $$J(w,b) = \frac{1}{m}\sum_{i=1}^{m}L(\hat y^{(i)},y^{(i)})=-\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}log(\hat y^{(i)})+(1-y^{(i)})log(1-\hat y^{(i)})]$$
-    
+    梯度下降函数
+        
     
     
 概念
